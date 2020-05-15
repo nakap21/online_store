@@ -1,10 +1,16 @@
 # Online store
 
-Backend for web service.
+Backend for web application "Online store".
+
+**Architecture:**
+
+* Framework - Python Django
+
+* Database - PostgreSQL
 
 **How to run the application:**
 
-* Run ```sudo docker-compose up``` in command line
+* Run ```sudo docker-compose up --build``` in command line
 
 **Swagger documentation:**
 
@@ -14,5 +20,3 @@ Backend for web service.
 
 * To edit/delete item - __PUT/DELETE /api/v1/items/item/detail/< pk >__
 
-**Created with:**
-* Python Django - web framework.
