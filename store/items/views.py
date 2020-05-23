@@ -5,10 +5,7 @@ from rest_framework import status
 from rest_framework.response import Response
 # Create your views here.
 
-class ItemCreateView(generics.CreateAPIView):
-    serializer_class = ItemDetailSerializer
-
-class ItemsListView(generics.ListAPIView):
+class ItemCreateAndListView(generics.CreateAPIView, generics.ListAPIView):
     serializer_class = ItemDetailSerializer
     queryset = Item.objects.all()
 
